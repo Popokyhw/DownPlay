@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Juego</title>
+    <link rel="stylesheet" href="style.css">
+	<script type="importmap">
+        {
+          "imports": {
+            "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/index.min.js",
+            "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
+          }
+        }
+    </script>
+    <script src="game-details.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DownPlay</div>
+            <ul>
+                <li><a href="index.html">Juegos</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar juegos...">
+                <button>Buscar</button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="my-summer-car">
+        <section id="game-info">
+            <img id="game-image" src="https://i.postimg.cc/hGm2ZqHp/Dise-o-sin-t-tulo-1.webp" alt="My Summer Car">
+            <h1 id="game-title">My Summer Car</h1>
+            <p id="game-genre">Supervivencia, Simulacion</p>
+            <p id="game-description">My Summer Car es un videojuego de simulación y supervivencia ambientado en la Finlandia rural de los años 90. Desarrollado por Amistech Games, combina la construcción de automóviles con elementos de supervivencia. Los jugadores deben ensamblar y reparar un coche desde cero, gestionando cada detalle, como el motor, los frenos y otros componentes.</p>
+			<p id="my-summer-car">Creditos a Amistech Games, links sin fines de lucro.</p>
+            <div class="download-links">
+                <a id="steam-link" href="https://store.steampowered.com/app/516750/My_Summer_Car/" target="_blank">Steam</a>
+                <a id="mega-link" href="#" target="_blank">Mega</a>
+                <a id="mediafire-link" href="#" target="_blank">Mediafire</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DownPlay. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

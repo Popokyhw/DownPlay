@@ -1,0 +1,87 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DownPlay - Tu Centro de Descargas de Juegos</title>
+    <meta name="description" content="Descarga tus juegos favoritos rápida y fácilmente con DownPlay.">
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+          "imports": {
+            "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/index.min.js",
+            "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
+          }
+        }
+    </script>
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">DownPlay</div>
+            <ul>
+                <li><a href="#">Juegos</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar juegos...">
+                <button>Buscar</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Descubre y Descarga tu Próximo Juego Favorito</h1>
+            <p>Explora una vasta biblioteca de juegos y descárgalos al instante. ¡Comienza a jugar hoy!</p>
+            <button class="cta-button">Explorar Juegos</button>
+        </section>
+
+        <section id="featured-games">
+            <h2>Juegos Destacados</h2>
+            <div class="game-grid">
+                <div class="game-card" onclick="window.location.href='game-details.html?gameId=my-summer-car'">
+                    <img src="https://i.postimg.cc/hGm2ZqHp/Dise-o-sin-t-tulo-1.webp" alt="My Summer Car">
+                    <h3>My Summer Car</h3>
+                    <p>Género: Supervivencia, Simulación</p>
+                </div>
+                <!-- More Game Cards Here -->
+            </div>
+        </section>
+
+        <section id="categories">
+            <h2>Categorías de Juegos</h2>
+            <div class="category-list">
+                <ul>
+                    <li><a href="#">Acción</a></li>
+                    <li><a href="#">Aventura</a></li>
+                    <li><a href="#">Estrategia</a></li>
+                    <li><a href="#">RPG</a></li>
+                    <li><a href="#">Simulación</a></li>
+                    <li><a href="#">Puzzle</a></li>
+                    <!-- More Categories Here -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div id="game-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-genre"></p>
+            <p class="modal-description"></p>
+            <button class="download-button" onclick="window.location.href='#download'">Descargar Ahora</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 DownPlay. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
